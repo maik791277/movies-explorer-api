@@ -7,5 +7,4 @@
 
 IP-адрес 51.250.66.78
 
-Backend(https) https://api.v-porulitsun-bitfilms.nomoreparties.co/
-Backend(http) http://api.v-porulitsun-bitfilms.nomoreparties.co/
+Backend(https-http) https://api.v-porulitsun-bitfilms.nomoreparties.co/
