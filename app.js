@@ -14,11 +14,6 @@ const {
   MONGO_URL = 'mongodb://127.0.0.1:27017',
 } = process.env;
 
-const allowedOrigins = [
-  'https://v-porulitsun.nomoredomains.xyz',
-  'http://v-porulitsun.nomoredomains.xyz',
-];
-
 const app = express();
 app.use(express.json());
 app.use(requestLogger);
@@ -26,7 +21,7 @@ app.use(requestLogger);
 mongoose.connect(`${MONGO_URL}/bitfilmsdb`, { useUnifiedTopology: true });
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: '*',
   credentials: true,
 }));
 
